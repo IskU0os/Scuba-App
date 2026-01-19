@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scuba Dive Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤿 Scuba Dive Planner</h1>
+            <p class="subtitle">Plan your recreational dives safely</p>
+        </header>
+
+        <div class="warning-banner">
+            <strong>⚠️ Warning:</strong> This tool is for educational purposes only. Always use official dive tables and consult with certified dive professionals.
+        </div>
+
+        <div class="card">
+            <h2>Single Dive Calculator</h2>
+            <div class="input-group">
+                <label for="depth">Planned Depth (feet):</label>
+                <input type="number" id="depth" min="0" max="130" value="60" step="5">
+                <span class="unit">ft</span>
+            </div>
+
+            <div class="input-group">
+                <label for="time">Planned Bottom Time (minutes):</label>
+                <input type="number" id="time" min="0" max="200" value="30" step="5">
+                <span class="unit">min</span>
+            </div>
+
+            <button onclick="calculateDive()" class="btn-primary">Calculate Dive</button>
+
+            <div id="results" class="results hidden">
+                <h3>Dive Analysis</h3>
+                <div id="ndl-info"></div>
+                <div id="pressure-group"></div>
+                <div id="safety-warnings"></div>
+                <div id="recommendations"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Surface Interval Calculator</h2>
+            <div class="input-group">
+                <label for="pressure-group-input">Pressure Group After First Dive:</label>
+                <select id="pressure-group-input">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="H">H</option>
+                    <option value="I">I</option>
+                    <option value="J">J</option>
+                    <option value="K">K</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="surface-interval">Surface Interval (minutes):</label>
+                <input type="number" id="surface-interval" min="0" max="720" value="60" step="15">
+                <span class="unit">min</span>
+            </div>
+
+            <button onclick="calculateSurfaceInterval()" class="btn-secondary">Calculate New Pressure Group</button>
+
+            <div id="surface-results" class="results hidden">
+                <h3>Surface Interval Results</h3>
+                <div id="new-pressure-group"></div>
+                <div id="surface-recommendations"></div>
+            </div>
+        </div>
+
+        <div class="card info-card">
+            <h2>Recreational Dive Limits</h2>
+            <ul>
+                <li><strong>Maximum Depth:</strong> 130 feet (40 meters) for recreational diving</li>
+                <li><strong>Recommended Beginner Depth:</strong> 60 feet (18 meters)</li>
+                <li><strong>Ascent Rate:</strong> No faster than 30 feet/minute (9 meters/minute)</li>
+                <li><strong>Safety Stop:</strong> 3-5 minutes at 15 feet (5 meters)</li>
+                <li><strong>Minimum Surface Interval:</strong> Plan appropriate surface intervals between dives</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Always dive with a buddy and within your certification limits.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
