@@ -10,14 +10,20 @@
     <div class="container">
         <header>
             <h1>🤿 Scuba Dive Planner</h1>
-            <p class="subtitle">Plan your recreational dives safely</p>
+            <p class="subtitle">Plan your recreational and technical dives safely</p>
         </header>
 
-        <div class="warning-banner">
-            <strong>⚠️ Warning:</strong> This tool is for educational purposes only. Always use official dive tables and consult with certified dive professionals.
+        <div class="tab-container">
+            <button class="tab-button active" onclick="switchTab('recreational')">Recreational</button>
+            <button class="tab-button" onclick="switchTab('technical')">Technical (GUE)</button>
         </div>
 
-        <div class="card">
+        <div id="recreational-tab" class="tab-content active">
+            <div class="warning-banner">
+                <strong>⚠️ Warning:</strong> This tool is for educational purposes only. Always use official dive tables and consult with certified dive professionals.
+            </div>
+
+            <div class="card">
             <h2>Single Dive Calculator</h2>
             <div class="input-group">
                 <label for="depth">Planned Depth (feet):</label>
@@ -77,15 +83,103 @@
             </div>
         </div>
 
-        <div class="card info-card">
-            <h2>Recreational Dive Limits</h2>
-            <ul>
-                <li><strong>Maximum Depth:</strong> 130 feet (40 meters) for recreational diving</li>
-                <li><strong>Recommended Beginner Depth:</strong> 60 feet (18 meters)</li>
-                <li><strong>Ascent Rate:</strong> No faster than 30 feet/minute (9 meters/minute)</li>
-                <li><strong>Safety Stop:</strong> 3-5 minutes at 15 feet (5 meters)</li>
-                <li><strong>Minimum Surface Interval:</strong> Plan appropriate surface intervals between dives</li>
-            </ul>
+            <div class="card info-card">
+                <h2>Recreational Dive Limits</h2>
+                <ul>
+                    <li><strong>Maximum Depth:</strong> 130 feet (40 meters) for recreational diving</li>
+                    <li><strong>Recommended Beginner Depth:</strong> 60 feet (18 meters)</li>
+                    <li><strong>Ascent Rate:</strong> No faster than 30 feet/minute (9 meters/minute)</li>
+                    <li><strong>Safety Stop:</strong> 3-5 minutes at 15 feet (5 meters)</li>
+                    <li><strong>Minimum Surface Interval:</strong> Plan appropriate surface intervals between dives</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="technical-tab" class="tab-content">
+            <div class="warning-banner">
+                <strong>⚠️ Technical Diving Warning:</strong> Technical diving requires specialized training and certification. This tool implements GUE standards for educational purposes only.
+            </div>
+
+            <div class="card">
+                <h2>DecoPlanner - GUE Technical Dive Calculator</h2>
+
+                <div class="input-group">
+                    <label for="tech-depth">Maximum Depth (feet):</label>
+                    <input type="number" id="tech-depth" min="0" max="330" value="150" step="10">
+                    <span class="unit">ft</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="tech-bottom-time">Bottom Time (minutes):</label>
+                    <input type="number" id="tech-bottom-time" min="0" max="120" value="20" step="5">
+                    <span class="unit">min</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="bottom-gas">Bottom Gas:</label>
+                    <select id="bottom-gas">
+                        <option value="air">Air (21/00)</option>
+                        <option value="ean32">EAN32 (32/00)</option>
+                        <option value="ean36">EAN36 (36/00)</option>
+                        <option value="21/35" selected>Trimix 21/35</option>
+                        <option value="18/45">Trimix 18/45</option>
+                        <option value="15/55">Trimix 15/55</option>
+                        <option value="12/65">Trimix 12/65</option>
+                        <option value="10/70">Trimix 10/70</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="deco-gas">Deco Gas:</label>
+                    <select id="deco-gas">
+                        <option value="none">None (Bottom Gas Only)</option>
+                        <option value="ean50" selected>EAN50 (50/00)</option>
+                        <option value="oxygen">Oxygen (100/00)</option>
+                        <option value="both">EAN50 + Oxygen</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="gf-low">Gradient Factor Low (%):</label>
+                    <input type="number" id="gf-low" min="10" max="100" value="30" step="5">
+                    <span class="unit">%</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="gf-high">Gradient Factor High (%):</label>
+                    <input type="number" id="gf-high" min="10" max="100" value="70" step="5">
+                    <span class="unit">%</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="ascent-rate">Ascent Rate (feet/min):</label>
+                    <input type="number" id="ascent-rate" min="10" max="60" value="30" step="10">
+                    <span class="unit">ft/min</span>
+                </div>
+
+                <button onclick="calculateTechnicalDive()" class="btn-primary">Calculate Deco Schedule</button>
+
+                <div id="tech-results" class="results hidden">
+                    <h3>Decompression Schedule</h3>
+                    <div id="tech-profile"></div>
+                    <div id="runtime-table"></div>
+                    <div id="gas-requirements"></div>
+                    <div id="tech-warnings"></div>
+                </div>
+            </div>
+
+            <div class="card info-card">
+                <h2>GUE Technical Diving Standards</h2>
+                <ul>
+                    <li><strong>Standard Gases:</strong> GUE uses standardized gas mixes for specific depth ranges</li>
+                    <li><strong>Gradient Factors:</strong> Conservative 30/70 or 30/85 depending on conditions</li>
+                    <li><strong>Ascent Rate:</strong> 30 feet/minute (10 meters/minute)</li>
+                    <li><strong>Deep Stops:</strong> Integrated through gradient factor methodology</li>
+                    <li><strong>Min Deco:</strong> Minimum decompression time approach</li>
+                    <li><strong>Team Diving:</strong> All technical dives require proper team configuration</li>
+                    <li><strong>Gas Planning:</strong> Rule of thirds for backmount, rule of sixths for sidemount</li>
+                </ul>
+            </div>
         </div>
 
         <footer>
