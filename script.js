@@ -1,17 +1,17 @@
 // Simplified No-Decompression Limits (NDL) Table based on PADI RDP
-// Depth in feet -> Max bottom time in minutes
+// Depth in meters -> Max bottom time in minutes
 const ndlTable = {
-    35: { ndl: 205, pressureGroups: {10: 'A', 20: 'B', 30: 'B', 40: 'C', 50: 'C', 60: 'D', 70: 'D', 80: 'E', 90: 'E', 100: 'F', 110: 'F', 120: 'G', 130: 'G', 140: 'H', 150: 'H', 160: 'I', 170: 'I', 180: 'J', 190: 'J', 200: 'K', 205: 'L'} },
-    40: { ndl: 140, pressureGroups: {10: 'A', 20: 'B', 25: 'C', 30: 'C', 40: 'D', 50: 'E', 60: 'F', 70: 'G', 80: 'H', 90: 'I', 100: 'J', 110: 'K', 120: 'L', 130: 'L', 140: 'L'} },
-    50: { ndl: 80, pressureGroups: {10: 'B', 20: 'C', 25: 'D', 30: 'D', 40: 'E', 50: 'F', 60: 'G', 70: 'H', 80: 'I'} },
-    60: { ndl: 55, pressureGroups: {10: 'B', 15: 'C', 20: 'D', 25: 'D', 30: 'E', 40: 'F', 50: 'G', 55: 'H'} },
-    70: { ndl: 40, pressureGroups: {10: 'C', 15: 'D', 20: 'E', 25: 'E', 30: 'F', 40: 'G'} },
-    80: { ndl: 30, pressureGroups: {10: 'D', 15: 'E', 20: 'F', 25: 'F', 30: 'G'} },
-    90: { ndl: 25, pressureGroups: {10: 'E', 15: 'F', 20: 'G', 25: 'H'} },
-    100: { ndl: 20, pressureGroups: {10: 'F', 15: 'G', 20: 'H'} },
-    110: { ndl: 16, pressureGroups: {10: 'G', 15: 'H', 16: 'I'} },
-    120: { ndl: 13, pressureGroups: {10: 'H', 13: 'I'} },
-    130: { ndl: 10, pressureGroups: {10: 'I'} }
+    11: { ndl: 205, pressureGroups: {10: 'A', 20: 'B', 30: 'B', 40: 'C', 50: 'C', 60: 'D', 70: 'D', 80: 'E', 90: 'E', 100: 'F', 110: 'F', 120: 'G', 130: 'G', 140: 'H', 150: 'H', 160: 'I', 170: 'I', 180: 'J', 190: 'J', 200: 'K', 205: 'L'} },
+    12: { ndl: 140, pressureGroups: {10: 'A', 20: 'B', 25: 'C', 30: 'C', 40: 'D', 50: 'E', 60: 'F', 70: 'G', 80: 'H', 90: 'I', 100: 'J', 110: 'K', 120: 'L', 130: 'L', 140: 'L'} },
+    15: { ndl: 80, pressureGroups: {10: 'B', 20: 'C', 25: 'D', 30: 'D', 40: 'E', 50: 'F', 60: 'G', 70: 'H', 80: 'I'} },
+    18: { ndl: 55, pressureGroups: {10: 'B', 15: 'C', 20: 'D', 25: 'D', 30: 'E', 40: 'F', 50: 'G', 55: 'H'} },
+    21: { ndl: 40, pressureGroups: {10: 'C', 15: 'D', 20: 'E', 25: 'E', 30: 'F', 40: 'G'} },
+    24: { ndl: 30, pressureGroups: {10: 'D', 15: 'E', 20: 'F', 25: 'F', 30: 'G'} },
+    27: { ndl: 25, pressureGroups: {10: 'E', 15: 'F', 20: 'G', 25: 'H'} },
+    30: { ndl: 20, pressureGroups: {10: 'F', 15: 'G', 20: 'H'} },
+    34: { ndl: 16, pressureGroups: {10: 'G', 15: 'H', 16: 'I'} },
+    37: { ndl: 13, pressureGroups: {10: 'H', 13: 'I'} },
+    40: { ndl: 10, pressureGroups: {10: 'I'} }
 };
 
 // Surface Interval Credit Table (simplified)
@@ -80,11 +80,11 @@ function calculateDive() {
     let warnings = [];
     let recs = [];
 
-    if (depth > 130) {
-        warnings.push('<p class="status-danger">⛔ UNSAFE: Depth exceeds 130 feet recreational limit!</p>');
-    } else if (depth > 100) {
+    if (depth > 40) {
+        warnings.push('<p class="status-danger">⛔ UNSAFE: Depth exceeds 40 meters recreational limit!</p>');
+    } else if (depth > 30) {
         warnings.push('<p class="status-caution">⚠️ CAUTION: Advanced depth - ensure proper certification</p>');
-    } else if (depth > 60) {
+    } else if (depth > 18) {
         warnings.push('<p class="status-caution">⚠️ CAUTION: Intermediate depth level</p>');
     } else {
         warnings.push('<p class="status-safe">✓ Depth within beginner-friendly range</p>');
@@ -96,14 +96,14 @@ function calculateDive() {
 
     if (time > ndl) {
         warnings.push(`<p class="status-danger">⛔ UNSAFE: Bottom time (${time} min) exceeds No-Decompression Limit (${ndl} min)!</p>`);
-        ndlInfo.innerHTML = `<p><strong>No-Decompression Limit at ${tableDepth} feet:</strong> ${ndl} minutes</p>
+        ndlInfo.innerHTML = `<p><strong>No-Decompression Limit at ${tableDepth} meters:</strong> ${ndl} minutes</p>
                             <p class="status-danger">Your planned time EXCEEDS the NDL by ${time - ndl} minutes!</p>`;
     } else if (timeRemaining <= 5) {
         warnings.push('<p class="status-caution">⚠️ CAUTION: Very close to NDL - minimal safety margin</p>');
-        ndlInfo.innerHTML = `<p><strong>No-Decompression Limit at ${tableDepth} feet:</strong> ${ndl} minutes</p>
+        ndlInfo.innerHTML = `<p><strong>No-Decompression Limit at ${tableDepth} meters:</strong> ${ndl} minutes</p>
                             <p class="status-caution">Time remaining: ${timeRemaining} minutes (very close to limit)</p>`;
     } else {
-        ndlInfo.innerHTML = `<p><strong>No-Decompression Limit at ${tableDepth} feet:</strong> ${ndl} minutes</p>
+        ndlInfo.innerHTML = `<p><strong>No-Decompression Limit at ${tableDepth} meters:</strong> ${ndl} minutes</p>
                             <p class="status-safe">Time remaining: ${timeRemaining} minutes</p>`;
     }
 
@@ -117,11 +117,11 @@ function calculateDive() {
 
     // Safety recommendations
     recs.push('<p><strong>Recommendations:</strong></p><ul>');
-    recs.push('<li>Perform a safety stop: 3-5 minutes at 15 feet</li>');
-    recs.push('<li>Ascend no faster than 30 feet per minute</li>');
+    recs.push('<li>Perform a safety stop: 3-5 minutes at 5 meters</li>');
+    recs.push('<li>Ascend no faster than 9 meters per minute</li>');
     recs.push('<li>Always dive with a buddy</li>');
 
-    if (depth >= 60) {
+    if (depth >= 18) {
         recs.push('<li>Consider bringing a dive computer for real-time monitoring</li>');
     }
 
@@ -212,18 +212,18 @@ const buhlmannCompartments = [
     { halfTime: 635.0, aN2: 0.2327, bN2: 0.9653 }
 ];
 
-// Gas mix definitions
+// Gas mix definitions (MOD in meters)
 const gasMixes = {
-    'air': { o2: 21, he: 0, mod: 130 },
-    'ean32': { o2: 32, he: 0, mod: 110 },
-    'ean36': { o2: 36, he: 0, mod: 95 },
-    'ean50': { o2: 50, he: 0, mod: 70 },
-    'oxygen': { o2: 100, he: 0, mod: 20 },
-    '21/35': { o2: 21, he: 35, mod: 190 },
-    '18/45': { o2: 18, he: 45, mod: 240 },
-    '15/55': { o2: 15, he: 55, mod: 280 },
-    '12/65': { o2: 12, he: 65, mod: 320 },
-    '10/70': { o2: 10, he: 70, mod: 330 }
+    'air': { o2: 21, he: 0, mod: 40 },
+    'ean32': { o2: 32, he: 0, mod: 34 },
+    'ean36': { o2: 36, he: 0, mod: 29 },
+    'ean50': { o2: 50, he: 0, mod: 21 },
+    'oxygen': { o2: 100, he: 0, mod: 6 },
+    '21/35': { o2: 21, he: 35, mod: 58 },
+    '18/45': { o2: 18, he: 45, mod: 73 },
+    '15/55': { o2: 15, he: 55, mod: 85 },
+    '12/65': { o2: 12, he: 65, mod: 98 },
+    '10/70': { o2: 10, he: 70, mod: 100 }
 };
 
 // Calculate partial pressure of N2 in breathing gas
@@ -232,14 +232,14 @@ function getN2Fraction(gas) {
     return (100 - gasData.o2 - gasData.he) / 100;
 }
 
-// Calculate ambient pressure at depth (in ATA)
-function depthToATA(depthFeet) {
-    return 1 + (depthFeet / 33);
+// Calculate ambient pressure at depth (in bar)
+function depthToATA(depthMeters) {
+    return 1 + (depthMeters / 10);
 }
 
 // Calculate inspired N2 pressure
-function getInspiredN2Pressure(depthFeet, gas) {
-    const ambientPressure = depthToATA(depthFeet);
+function getInspiredN2Pressure(depthMeters, gas) {
+    const ambientPressure = depthToATA(depthMeters);
     const n2Fraction = getN2Fraction(gas);
     return ambientPressure * n2Fraction;
 }
@@ -327,14 +327,14 @@ function calculateTechnicalDive() {
 
     // Calculate first deco stop
     let firstStopDepth = 0;
-    for (let depth = Math.ceil(currentDepth / 10) * 10; depth >= 0; depth -= 10) {
+    for (let depth = Math.ceil(currentDepth / 3) * 3; depth >= 0; depth -= 3) {
         const canAscend = tissues.every((tissue, i) => {
             const ceiling = calculateMValue(buhlmannCompartments[i], depth, gfLow, gfHigh, firstStopDepth);
             return tissue <= ceiling;
         });
 
         if (!canAscend) {
-            firstStopDepth = depth + 10;
+            firstStopDepth = depth + 3;
             break;
         }
     }
@@ -346,29 +346,29 @@ function calculateTechnicalDive() {
     let currentGas = bottomGas;
     const gasSchedule = [{ depth: maxDepth, gas: bottomGas }];
 
-    // Switch to EAN50 at 70ft if available
-    if ((decoGas === 'ean50' || decoGas === 'both') && currentDepth > 70) {
-        gasSchedule.push({ depth: 70, gas: 'ean50' });
+    // Switch to EAN50 at 21m if available
+    if ((decoGas === 'ean50' || decoGas === 'both') && currentDepth > 21) {
+        gasSchedule.push({ depth: 21, gas: 'ean50' });
     }
 
-    // Switch to O2 at 20ft if available
-    if ((decoGas === 'oxygen' || decoGas === 'both') && currentDepth > 20) {
-        gasSchedule.push({ depth: 20, gas: 'oxygen' });
+    // Switch to O2 at 6m if available
+    if ((decoGas === 'oxygen' || decoGas === 'both') && currentDepth > 6) {
+        gasSchedule.push({ depth: 6, gas: 'oxygen' });
     }
 
     // Ascent with deco stops
     while (currentDepth > 0) {
         // Check for gas switch
         for (let gs of gasSchedule) {
-            if (currentDepth > gs.depth && currentDepth - 10 <= gs.depth) {
+            if (currentDepth > gs.depth && currentDepth - 3 <= gs.depth) {
                 currentGas = gs.gas;
                 profile.push({ depth: gs.depth, time: 0, runtime: runtime, gas: currentGas, phase: 'Gas Switch' });
             }
         }
 
-        // Ascend 10 feet
-        let nextDepth = Math.max(0, currentDepth - 10);
-        const ascentTime = 10 / ascentRate;
+        // Ascend 3 meters
+        let nextDepth = Math.max(0, currentDepth - 3);
+        const ascentTime = 3 / ascentRate;
 
         // Update tissues during ascent
         const avgDepth = (currentDepth + nextDepth) / 2;
@@ -387,15 +387,15 @@ function calculateTechnicalDive() {
         let ceilingDepth = 0;
 
         tissues.forEach((tissue, i) => {
-            const ceiling = calculateMValue(buhlmannCompartments[i], currentDepth - 10, gfLow, gfHigh, firstStopDepth);
+            const ceiling = calculateMValue(buhlmannCompartments[i], currentDepth - 3, gfLow, gfHigh, firstStopDepth);
             if (tissue > ceiling) {
                 needsStop = true;
-                const requiredDepth = Math.ceil(currentDepth / 10) * 10;
+                const requiredDepth = Math.ceil(currentDepth / 3) * 3;
                 if (requiredDepth > ceilingDepth) ceilingDepth = requiredDepth;
             }
         });
 
-        if (needsStop || (currentDepth === 20 || currentDepth === 10)) {
+        if (needsStop || (currentDepth === 6 || currentDepth === 3)) {
             // Deco stop required
             let stopTime = 0;
             let canLeave = false;
@@ -409,7 +409,7 @@ function calculateTechnicalDive() {
 
                 // Check if we can ascend
                 canLeave = tissues.every((tissue, i) => {
-                    const nextCeiling = calculateMValue(buhlmannCompartments[i], currentDepth - 10, gfLow, gfHigh, firstStopDepth);
+                    const nextCeiling = calculateMValue(buhlmannCompartments[i], currentDepth - 3, gfLow, gfHigh, firstStopDepth);
                     return tissue <= nextCeiling;
                 });
             }
@@ -434,7 +434,7 @@ function displayTechnicalResults(profile, decoStops, totalRuntime, maxDepth, bot
     // Profile summary
     const totalDeco = decoStops.reduce((sum, stop) => sum + stop.time, 0);
     profileDiv.innerHTML = `
-        <p><strong>Max Depth:</strong> ${maxDepth} feet</p>
+        <p><strong>Max Depth:</strong> ${maxDepth} meters</p>
         <p><strong>Bottom Time:</strong> ${bottomTime} minutes</p>
         <p><strong>Total Deco Time:</strong> ${Math.round(totalDeco)} minutes</p>
         <p><strong>Total Runtime:</strong> ${Math.round(totalRuntime)} minutes</p>
@@ -443,7 +443,7 @@ function displayTechnicalResults(profile, decoStops, totalRuntime, maxDepth, bot
 
     // Runtime table
     let tableHTML = '<h4>Runtime Table</h4><table style="width:100%; border-collapse: collapse; margin-top: 10px;">';
-    tableHTML += '<tr style="background: #0891b2; color: white;"><th style="padding: 8px; border: 1px solid #ddd;">Depth (ft)</th><th style="padding: 8px; border: 1px solid #ddd;">Time (min)</th><th style="padding: 8px; border: 1px solid #ddd;">Runtime</th><th style="padding: 8px; border: 1px solid #ddd;">Gas</th></tr>';
+    tableHTML += '<tr style="background: #0891b2; color: white;"><th style="padding: 8px; border: 1px solid #ddd;">Depth (m)</th><th style="padding: 8px; border: 1px solid #ddd;">Time (min)</th><th style="padding: 8px; border: 1px solid #ddd;">Runtime</th><th style="padding: 8px; border: 1px solid #ddd;">Gas</th></tr>';
 
     profile.forEach(segment => {
         const rowColor = segment.phase === 'Deco Stop' ? '#ecfeff' : 'white';
@@ -459,21 +459,21 @@ function displayTechnicalResults(profile, decoStops, totalRuntime, maxDepth, bot
 
     // Gas requirements (simplified)
     const bottomGasData = gasMixes[bottomGas];
-    const sacRate = 0.75; // cubic feet per minute at surface
+    const sacRate = 20; // liters per minute at surface
     const avgDepth = maxDepth / 2;
-    const avgATA = depthToATA(avgDepth);
-    const bottomGasRequired = Math.round(bottomTime * avgATA * sacRate * 1.5); // 1.5x safety factor
+    const avgBar = depthToATA(avgDepth);
+    const bottomGasRequired = Math.round(bottomTime * avgBar * sacRate * 1.5); // 1.5x safety factor
 
     gasDiv.innerHTML = `
         <h4>Gas Requirements (Estimated)</h4>
-        <p><strong>Bottom Gas (${bottomGas}):</strong> ~${bottomGasRequired} cu ft</p>
+        <p><strong>Bottom Gas (${bottomGas}):</strong> ~${bottomGasRequired} liters</p>
         <p><em>Note: Always plan gas based on SAC rate and apply rule of thirds</em></p>
     `;
 
     // Warnings
     let warnings = [];
     if (maxDepth > gasMixes[bottomGas].mod) {
-        warnings.push(`<p class="status-danger">⛔ WARNING: Depth exceeds MOD for ${bottomGas} (${gasMixes[bottomGas].mod}ft)</p>`);
+        warnings.push(`<p class="status-danger">⛔ WARNING: Depth exceeds MOD for ${bottomGas} (${gasMixes[bottomGas].mod}m)</p>`);
     }
     if (totalDeco > 60) {
         warnings.push('<p class="status-caution">⚠️ Extended deco dive - ensure proper team and equipment</p>');
