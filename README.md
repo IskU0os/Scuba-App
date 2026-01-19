@@ -14,7 +14,7 @@ A simple web-based scuba dive planner for recreational divers. Plan your dives s
 ## How to Use
 
 1. Open `index.html` in your web browser
-2. Enter your planned dive depth (in feet) and bottom time (in minutes)
+2. Enter your planned dive depth (in meters) and bottom time (in minutes)
 3. Click "Calculate Dive" to see your dive analysis
 4. Use the Surface Interval Calculator to plan repetitive dives
 
@@ -29,18 +29,20 @@ A simple web-based scuba dive planner for recreational divers. Plan your dives s
 
 ## Recreational Dive Limits
 
-- **Maximum Depth**: 130 feet (40 meters)
-- **Recommended Beginner Depth**: 60 feet (18 meters)
-- **Maximum Ascent Rate**: 30 feet/minute (9 meters/minute)
-- **Safety Stop**: 3-5 minutes at 15 feet (5 meters) on all dives
+- **Maximum Depth**: 40 meters
+- **Recommended Beginner Depth**: 18 meters
+- **Maximum Ascent Rate**: 9 meters/minute
+- **Safety Stop**: 3-5 minutes at 5 meters on all dives
 - **Minimum Surface Interval**: Follow pressure group guidelines
 
 ## Technical Details
 
 The app uses simplified versions of PADI Recreational Dive Planner (RDP) tables including:
-- No-Decompression Limit (NDL) tables for depths from 35-130 feet
+- No-Decompression Limit (NDL) tables for depths from 11-40 meters
 - Pressure group designations (A through L)
 - Surface interval credit tables for nitrogen off-gassing calculations
+- Buhlmann ZHL-16C decompression algorithm with gradient factors for technical diving
+- Metric measurements throughout (meters, bar, liters)
 
 ## Files
 

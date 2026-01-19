@@ -26,9 +26,9 @@
             <div class="card">
             <h2>Single Dive Calculator</h2>
             <div class="input-group">
-                <label for="depth">Planned Depth (feet):</label>
-                <input type="number" id="depth" min="0" max="130" value="60" step="5">
-                <span class="unit">ft</span>
+                <label for="depth">Planned Depth (meters):</label>
+                <input type="number" id="depth" min="0" max="40" value="18" step="1">
+                <span class="unit">m</span>
             </div>
 
             <div class="input-group">
@@ -86,10 +86,10 @@
             <div class="card info-card">
                 <h2>Recreational Dive Limits</h2>
                 <ul>
-                    <li><strong>Maximum Depth:</strong> 130 feet (40 meters) for recreational diving</li>
-                    <li><strong>Recommended Beginner Depth:</strong> 60 feet (18 meters)</li>
-                    <li><strong>Ascent Rate:</strong> No faster than 30 feet/minute (9 meters/minute)</li>
-                    <li><strong>Safety Stop:</strong> 3-5 minutes at 15 feet (5 meters)</li>
+                    <li><strong>Maximum Depth:</strong> 40 meters for recreational diving</li>
+                    <li><strong>Recommended Beginner Depth:</strong> 18 meters</li>
+                    <li><strong>Ascent Rate:</strong> No faster than 9 meters/minute</li>
+                    <li><strong>Safety Stop:</strong> 3-5 minutes at 5 meters</li>
                     <li><strong>Minimum Surface Interval:</strong> Plan appropriate surface intervals between dives</li>
                 </ul>
             </div>
@@ -104,9 +104,9 @@
                 <h2>DecoPlanner - GUE Technical Dive Calculator</h2>
 
                 <div class="input-group">
-                    <label for="tech-depth">Maximum Depth (feet):</label>
-                    <input type="number" id="tech-depth" min="0" max="330" value="150" step="10">
-                    <span class="unit">ft</span>
+                    <label for="tech-depth">Maximum Depth (meters):</label>
+                    <input type="number" id="tech-depth" min="0" max="100" value="45" step="3">
+                    <span class="unit">m</span>
                 </div>
 
                 <div class="input-group">
@@ -152,9 +152,9 @@
                 </div>
 
                 <div class="input-group">
-                    <label for="ascent-rate">Ascent Rate (feet/min):</label>
-                    <input type="number" id="ascent-rate" min="10" max="60" value="30" step="10">
-                    <span class="unit">ft/min</span>
+                    <label for="ascent-rate">Ascent Rate (meters/min):</label>
+                    <input type="number" id="ascent-rate" min="3" max="18" value="9" step="3">
+                    <span class="unit">m/min</span>
                 </div>
 
                 <button onclick="calculateTechnicalDive()" class="btn-primary">Calculate Deco Schedule</button>
@@ -173,7 +173,7 @@
                 <ul>
                     <li><strong>Standard Gases:</strong> GUE uses standardized gas mixes for specific depth ranges</li>
                     <li><strong>Gradient Factors:</strong> Conservative 30/70 or 30/85 depending on conditions</li>
-                    <li><strong>Ascent Rate:</strong> 30 feet/minute (10 meters/minute)</li>
+                    <li><strong>Ascent Rate:</strong> 9 meters/minute (standard GUE rate)</li>
                     <li><strong>Deep Stops:</strong> Integrated through gradient factor methodology</li>
                     <li><strong>Min Deco:</strong> Minimum decompression time approach</li>
                     <li><strong>Team Diving:</strong> All technical dives require proper team configuration</li>
