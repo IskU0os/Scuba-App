@@ -1,0 +1,1157 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-02-08",
+  "fields": {
+    "brand": "string",
+    "model": "string",
+    "product_url": "string (https URL) | null",
+    "image_url": "string (https URL) | null",
+    "notes": "string | null"
+  },
+  "categories": {
+    "masks": [
+      {
+        "brand": "Aqualung",
+        "model": "Teknika",
+        "product_url": "https://us.aqualung.com/products/teknika-dive-mask",
+        "image_url": "https://us.aqualung.com/cdn/shop/files/teknika-dive-mask-150101-1.jpg",
+        "notes": "Technical diving dual-lens mask with dark skirt"
+      },
+      {
+        "brand": "Atomic",
+        "model": "Venom Frameless",
+        "product_url": "https://www.atomicaquatics.com/products/masks/venom-frameless/",
+        "image_url": "https://www.atomicaquatics.com/wp-content/uploads/2023/06/Venom-Frameless-Black.jpg",
+        "notes": "Dual silicone construction with ultra-clear lens"
+      },
+      {
+        "brand": "Cressi",
+        "model": "Nano",
+        "product_url": "https://store.cressi.com/products/nano-mask",
+        "image_url": "https://store.cressi.com/cdn/shop/products/nano-mask.jpg",
+        "notes": "Ultra-low volume freediving and scuba mask"
+      },
+      {
+        "brand": "DeepBlue",
+        "model": "Covert",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Hollis",
+        "model": "M1",
+        "product_url": "https://www.hollis.com/product/mask-m-1/",
+        "image_url": "https://www.hollis.com/wp-content/uploads/2020/01/M1-Mask.jpg",
+        "notes": "Frameless ultra-clear glass lens mask"
+      },
+      {
+        "brand": "Hollis",
+        "model": "M3",
+        "product_url": "https://www.hollis.com/product/mask-m-3/",
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Mares",
+        "model": "Vento jr",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Junior/kids mask"
+      },
+      {
+        "brand": "Oceanic",
+        "model": "Shadow",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Reef Tourer",
+        "model": "Reef Tourer",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Scubapro",
+        "model": "Flux",
+        "product_url": "https://scubapro.johnsonoutdoors.com/us/shop/masks/flux-dive-mask",
+        "image_url": "https://scubapro.johnsonoutdoors.com/images/flux-dive-mask.jpg",
+        "notes": "Low volume single lens with ultra clear lens"
+      },
+      {
+        "brand": "Tusa",
+        "model": "Tisa",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "fins": [
+      {
+        "brand": "Cressi",
+        "model": "Gara Pro",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Full foot fins"
+      },
+      {
+        "brand": "Mares",
+        "model": "Avanti Quattro",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Full foot fins"
+      },
+      {
+        "brand": "Mares",
+        "model": "Avanti Quattro Plus",
+        "product_url": "https://www.scuba.com/p-mrsfaqp/mares-avanti-quattro-open-heel-fin",
+        "image_url": "https://www.scuba.com/images/mares-avanti-quattro-plus.jpg",
+        "notes": "Open heel fins with four-channel design"
+      },
+      {
+        "brand": "Mares",
+        "model": "Freedive Fin Keepers Silicone",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Fin keepers"
+      },
+      {
+        "brand": "OMS",
+        "model": "Slipstream",
+        "product_url": "https://www.divegearexpress.com/oms-slipstream-fins",
+        "image_url": "https://www.divegearexpress.com/images/oms-slipstream-fins.jpg",
+        "notes": "Open heel monoprene fins"
+      },
+      {
+        "brand": "Scubapro",
+        "model": "Jet Fin",
+        "product_url": "https://scubapro.johnsonoutdoors.com/us/shop/fins/jet-fin-w-spring-heel-strap",
+        "image_url": "https://scubapro.johnsonoutdoors.com/images/jet-fin.jpg",
+        "notes": "Open heel fins - classic design"
+      }
+    ],
+    "snorkels": [
+      {
+        "brand": "Atomic",
+        "model": "SV2",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Beauchat",
+        "model": "Apnea Snorkels",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Scubapro",
+        "model": "Apnea Snorkel",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "dive_computers": [
+      {
+        "brand": "Mares",
+        "model": "Puck Pro",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Shearwater",
+        "model": "Perdix 2.0",
+        "product_url": "https://shearwater.com/products/perdix-2",
+        "image_url": "https://shearwater.com/wp-content/uploads/2022/05/Perdix-2.jpg",
+        "notes": "Full-featured expedition-grade dive computer"
+      },
+      {
+        "brand": "Shearwater",
+        "model": "Petrel 3",
+        "product_url": "https://shearwater.com/products/petrel-3",
+        "image_url": "https://shearwater.com/wp-content/uploads/2024/03/Petrel-3.jpg",
+        "notes": "Advanced air-integrated dive computer with AMOLED display"
+      },
+      {
+        "brand": "Shearwater",
+        "model": "Shearwater : Teric Dive Computer",
+        "product_url": "https://shearwater.com/products/teric",
+        "image_url": "https://shearwater.com/wp-content/uploads/2018/12/Teric.jpg",
+        "notes": "Compact dive watch-style computer with AMOLED"
+      },
+      {
+        "brand": "Shearwater",
+        "model": "Swift Transmitter",
+        "product_url": "https://shearwater.com/products/swift",
+        "image_url": "https://shearwater.com/wp-content/uploads/2020/09/Swift.jpg",
+        "notes": "Wireless air integration transmitter"
+      },
+      {
+        "brand": "Shearwater",
+        "model": "Strap Extender",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Accessory"
+      },
+      {
+        "brand": "Shearwater",
+        "model": "Strap Primary",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Accessory"
+      }
+    ],
+    "regulators": [
+      {
+        "brand": "Apeks",
+        "model": "DS4 1st Stage",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Apeks",
+        "model": "MTX-R 1st Stage",
+        "product_url": "https://us.apeksdiving.com/products/mtx-r-1st-stage-dive-regulator",
+        "image_url": "https://us.apeksdiving.com/cdn/shop/files/MTX-R-1st-Stage.jpg",
+        "notes": "Extreme cold water regulator first stage"
+      },
+      {
+        "brand": "Apeks",
+        "model": "MTX-R 1st Stage DIN",
+        "product_url": "https://us.apeksdiving.com/products/mtx-r-1st-stage-dive-regulator",
+        "image_url": "https://us.apeksdiving.com/cdn/shop/files/MTX-R-1st-Stage-DIN.jpg",
+        "notes": "DIN configuration"
+      },
+      {
+        "brand": "Apeks",
+        "model": "MTX-R 2nd Stage",
+        "product_url": "https://us.apeksdiving.com/products/mtx-r-dive-regulator",
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Apeks",
+        "model": "XTX40 2nd Stage",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Dive Rite",
+        "model": "Drysuit Inflation Regulator",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "H-75P 1st Stage DIN",
+        "product_url": "https://www.halcyon.net/products/halcyon-h-75p-first-stage-regulator",
+        "image_url": "https://www.halcyon.net/cdn/shop/files/H-75P-First-Stage.jpg",
+        "notes": "Balanced freeze-resistant piston design"
+      },
+      {
+        "brand": "Halcyon",
+        "model": "H-75P 2nd Stage",
+        "product_url": "https://www.halcyon.net/products/halcyon-h-75p-first-stage-regulator",
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "bcds_and_wings": [
+      {
+        "brand": "Aqualung",
+        "model": "Axiom BCD",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "Eclipse Wing",
+        "product_url": "https://halcyon.net/products/halcyon-eclipse-wing",
+        "image_url": "https://halcyon.net/cdn/shop/files/Eclipse-Wing.jpg",
+        "notes": "Available in 20/30/40 lbs lift capacity"
+      },
+      {
+        "brand": "Halcyon",
+        "model": "Evolve Wing",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "Legend Wing",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "ScubaPro",
+        "model": "Glide",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "ScubaPro",
+        "model": "Scubapro Hydros X",
+        "product_url": "https://scubapro.johnsonoutdoors.com/us/shop/bcds/hydros-x-bcd-men",
+        "image_url": "https://scubapro.johnsonoutdoors.com/images/hydros-x-bcd.jpg",
+        "notes": "Front-adjustable with Monprene construction"
+      }
+    ],
+    "backplates": [
+      {
+        "brand": "Halcyon",
+        "model": "Aluminium Backplate",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "Steel Backplate",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "wetsuits": [
+      {
+        "brand": "Aqua Lung",
+        "model": "Aquaflex 3mm",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Bare",
+        "model": "Evoke 3mm",
+        "product_url": "https://www.baresports.com/products/womens-wetsuits/evoke/3mm-evoke-21/",
+        "image_url": "https://www.baresports.com/images/evoke-3mm.jpg",
+        "notes": "Graphene technology for warmth"
+      },
+      {
+        "brand": "Bare",
+        "model": "Evoke 5mm",
+        "product_url": "https://www.baresports.com/products/all-wetsuits/5mm-wetsuits/5mm-evoke-21/",
+        "image_url": "https://www.baresports.com/images/evoke-5mm.jpg",
+        "notes": "Graphene technology for cold water"
+      },
+      {
+        "brand": "Bare",
+        "model": "Reactive 3mm",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Henderson",
+        "model": "Thermoprene Pro",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "wetsuit_vests": [
+      {
+        "brand": "Bare",
+        "model": "Evoke 3mm Womens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Bare",
+        "model": "Evoke 5mm Womens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Bare",
+        "model": "Evoke 7mm Womens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Bare",
+        "model": "Reactivate 3mm Mens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Bare",
+        "model": "Reactivate 5mm Mens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Scubapro",
+        "model": "2.5mm Hood: Scubapro Everflex YULEX",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Scubapro",
+        "model": "Mens 5/3mm Hood: Scubapro Everflex YULEX",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "hooded_vests": [
+      {
+        "brand": "Bare",
+        "model": "Omnired 5/3mm",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "ScubaPro",
+        "model": "Everflex Yulex 2.0mm",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "ScubaPro",
+        "model": "Everflex Yulex 5.0mm",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "hoods": [
+      {
+        "brand": "Bare",
+        "model": "7mm Hood",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Bare",
+        "model": "9mm Hoods",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Bare",
+        "model": "Ultrawarmth 7mm Hood",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "K01",
+        "model": "9mm Hoods",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Santi",
+        "model": "11mm Hoods",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Santi",
+        "model": "7mm Hood",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Scubapro",
+        "model": "2.5mm Hood: Scubapro Everflex YULEX",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "gloves": [
+      {
+        "brand": "Aqualung",
+        "model": "Admiral III 2mm",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "9mm Lobster Gloves",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Waterproof",
+        "model": "G2 Aramid 5mm",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "boots": [
+      {
+        "brand": "Aqua Lung",
+        "model": "SuperZip ergo",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Aqua Lung",
+        "model": "UltraZip",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Scubapro",
+        "model": "Delta 5mm Booties",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "drysuits": [
+      {
+        "brand": "Bare",
+        "model": "Drysuit Mens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Bare",
+        "model": "Drysuit Womens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Santi",
+        "model": "Video Drysuit Custom",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "drysuit_boots": [
+      {
+        "brand": "Bare",
+        "model": "Drysuit Boots",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "drysuit_gloves": [
+      {
+        "brand": "Santi",
+        "model": "Dry Gloves",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Santi",
+        "model": "Smart Glove Systems",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Sitech",
+        "model": "Dry Gloves",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "drysuit_undergarments": [
+      {
+        "brand": "Bare",
+        "model": "Midlayer Mens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Bare",
+        "model": "Midlayer Womens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Enluve",
+        "model": "Merino Wool Gloves",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Enluve",
+        "model": "Merino Wool Socks",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Enluve",
+        "model": "Silk Gloves",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "Arctic Leggings Mens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "Arctic Leggings Womens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "Arctic Top Mens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "Arctic Top Womens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "Mens X Core Vest",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "Mens Xerotherm Leggings",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "Mens Xerotherm Top",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "Women's Xerotherm Leggings",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Fourth Element",
+        "model": "Womens X core Vest",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Icebreaker",
+        "model": "Merino Wool Leggings Mens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Icebreaker",
+        "model": "Merino Wool Leggings Womens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Icebreaker",
+        "model": "Merino Wool Top Mens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Icebreaker",
+        "model": "Merino Wool Top Womens",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "heated_vests": [
+      {
+        "brand": "Santi",
+        "model": "Heated Vests",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "tanks_and_cylinders": [
+      {
+        "brand": "Catalina",
+        "model": "AL06",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Catalina",
+        "model": "AL40",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Catalina",
+        "model": "AL80",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Faber",
+        "model": "AA Tank HP100",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Faber",
+        "model": "AA Tank HP120",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Luxfer",
+        "model": "AL19",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "stage_kits": [
+      {
+        "brand": "Halcyon",
+        "model": "Stage Cylinder Kits",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "Stage Rigging Kit- AL80s",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "smbs": [
+      {
+        "brand": "Halcyon",
+        "model": "Closed SMB Big",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "Closed SMB Small",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "Super Big Closed SMB",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "OMS",
+        "model": "1m Hybrid SMB",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "reels": [
+      {
+        "brand": "Halcyon",
+        "model": "Pathfinder Reel",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "torches": [
+      {
+        "brand": "BigBlue",
+        "model": "VTL2900P",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "Flare Handheld",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "Focus 2.0 Std cord w charger",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "HP Scout",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Hesser",
+        "model": "Backup Light Long",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Hesser",
+        "model": "Backup Light Short",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Light and Motion",
+        "model": "NightSea Bluelight",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Light and Motion",
+        "model": "Sola 2500",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "knives": [
+      {
+        "brand": "Scubapro",
+        "model": "Mako Knife",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Spyderco",
+        "model": "Dragonfly 2",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "cameras_and_accessories": [
+      {
+        "brand": "Backscatter",
+        "model": "Backscatter Lense M52 Wide Angle",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Keldan",
+        "model": "Ball Clamps",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Keldan",
+        "model": "Keldan Light",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Keldan",
+        "model": "Keldan Light Batteries",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Keldan",
+        "model": "Keldan Light Luna 8",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Nauticam",
+        "model": "Flexitrays (Arms)",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Nauticam",
+        "model": "Foam Arm 8oz Lift",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Nauticam",
+        "model": "Light Stem",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Nauticam",
+        "model": "Nauticam Strobe for Mounting Ball",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Nautilus",
+        "model": "Nautilus Strobe",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Olympus",
+        "model": "Olympus Camera Housing",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Olympus",
+        "model": "Olympus Tough TG-5",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Paralense",
+        "model": "ParaLense Camera",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "dive_tracking": [
+      {
+        "brand": "Garmin",
+        "model": "Garmin Descent 2 Transmitter",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Garmin",
+        "model": "Garmin S1 Descent Buoy",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "marine_gps": [
+      {
+        "brand": "Nautilus",
+        "model": "Nautilus : Lifeline Marine GPS",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "full_face_masks": [
+      {
+        "brand": "OTS",
+        "model": "OTS Comms",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "OTS",
+        "model": "OTS Full Face",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "cannister_batteries": [
+      {
+        "brand": "Santi",
+        "model": "Power Battery",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "floats": [
+      {
+        "brand": "Mares",
+        "model": "Freedive Float",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "tech_shorts": [
+      {
+        "brand": "Halcyon",
+        "model": "Tech Shorts",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ],
+    "other_miscellaneous": [
+      {
+        "brand": "Abyss",
+        "model": "Akona 3/2mm Kid's Full Wetsuit",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Kids wetsuit, may be miscategorized"
+      },
+      {
+        "brand": "Akona",
+        "model": "Mano Mini Fullsuit 3mm",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Kids wetsuit"
+      },
+      {
+        "brand": "Aquascan",
+        "model": "Aquapulse Metal Detector",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Halcyon",
+        "model": "DrySuit Inflation Straps",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Accessory"
+      },
+      {
+        "brand": "Hansa",
+        "model": "Emperor Penguin",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Plush toy / mascot"
+      },
+      {
+        "brand": "Oneil",
+        "model": "5mm kids wetsuits",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Kids wetsuit"
+      },
+      {
+        "brand": "Square Enix",
+        "model": "Fantasy IX: Vivi Ornitier Plush Action Doll",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Plush toy / mascot"
+      }
+    ],
+    "batteries_consumables": [
+      {
+        "brand": "18650 Lithium rechargeable battery",
+        "model": "18650",
+        "product_url": null,
+        "image_url": null,
+        "notes": "Generic battery"
+      },
+      {
+        "brand": "bigblue",
+        "model": "BATCELL32650",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "Duracell",
+        "model": "Duracell Plus",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "PKCELL",
+        "model": "CR123A",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "VARTA",
+        "model": "CR2",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      },
+      {
+        "brand": "VARTA",
+        "model": "Industrial Pro",
+        "product_url": null,
+        "image_url": null,
+        "notes": null
+      }
+    ]
+  }
+}
