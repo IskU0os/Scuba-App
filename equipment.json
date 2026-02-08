@@ -1,0 +1,350 @@
+{
+  "equipment": [
+    {
+      "company": "Scubapro",
+      "category": "BCD",
+      "products": [
+        {
+          "model": "Hydros Pro 2",
+          "year": 2025,
+          "description": "All-new Monorail Weight System with direct-mount design, 25% lighter Ergo-Lite back plate",
+          "sizes": ["XS", "S", "M", "L", "XL", "2XL"],
+          "productUrl": "https://scubapro.johnsonoutdoors.com/us/shop/bcds",
+          "imageUrl": "https://scubapro.johnsonoutdoors.com/images/hydros-pro-2.jpg",
+          "features": [
+            "Monorail Weight System",
+            "Ergo-Lite back plate",
+            "Modular customization",
+            "Available globally from Dec 2025"
+          ]
+        },
+        {
+          "model": "Hydros Pro",
+          "year": 2024,
+          "description": "Original Hydros with moldable Monprene, adjustable fit and multi-attachment points",
+          "sizes": ["XS", "S", "M", "L", "XL"],
+          "productUrl": "https://scubapro.johnsonoutdoors.com/us/shop/bcds/hydros-pro-bcd-men",
+          "imageUrl": "https://scubapro.johnsonoutdoors.com/images/hydros-pro.jpg",
+          "features": [
+            "Moldable Monprene material",
+            "Multi-attachment points",
+            "Adjustable fit"
+          ]
+        },
+        {
+          "model": "Navigator Lite",
+          "year": 2025,
+          "description": "Lightweight back-inflation BCD designed for traveling divers",
+          "sizes": ["S", "M", "L", "XL"],
+          "productUrl": "https://scubapro.johnsonoutdoors.com/us/shop/bcds",
+          "imageUrl": "https://scubapro.johnsonoutdoors.com/images/navigator-lite.jpg",
+          "features": [
+            "Airnet soft backpack",
+            "420D nylon construction",
+            "Travel-friendly design"
+          ]
+        },
+        {
+          "model": "Level BCD",
+          "year": 2024,
+          "description": "Front-adjustable BCD with performance and comfort for recreational diving",
+          "sizes": ["S", "M", "L", "XL"],
+          "productUrl": "https://scubapro.johnsonoutdoors.com/us/shop/bcds/level-bcd",
+          "imageUrl": "https://scubapro.johnsonoutdoors.com/images/level-bcd.jpg",
+          "features": [
+            "Front-adjustable design",
+            "Silver, blue and white graphics",
+            "Recreational diving focus"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Shearwater Research",
+      "category": "Dive Computer",
+      "products": [
+        {
+          "model": "Perdix 2",
+          "year": 2024,
+          "description": "Flagship full-size dive computer, considered the best available in 2025",
+          "sizes": ["One Size"],
+          "productUrl": "https://shearwater.com/collections/dive-computers",
+          "imageUrl": "https://shearwater.com/images/perdix-2.jpg",
+          "features": [
+            "Full-size display",
+            "Technical diving capable",
+            "Rechargeable battery",
+            "Buhlmann ZHL-16C algorithm"
+          ]
+        },
+        {
+          "model": "Peregrine",
+          "year": 2023,
+          "description": "Compact with large, bright display - most popular dive computer in 2025",
+          "sizes": ["One Size"],
+          "productUrl": "https://shearwater.com/collections/dive-computers",
+          "imageUrl": "https://shearwater.com/images/peregrine.jpg",
+          "features": [
+            "Large bright display",
+            "Recreational diving focus",
+            "Compact design",
+            "Rechargeable battery"
+          ]
+        },
+        {
+          "model": "Peregrine TX",
+          "year": 2024,
+          "description": "Compact with air integration and digital compass navigation",
+          "sizes": ["One Size"],
+          "productUrl": "https://shearwater.com/collections/dive-computers",
+          "imageUrl": "https://shearwater.com/images/peregrine-tx.jpg",
+          "features": [
+            "Air integration",
+            "Digital compass",
+            "Large bright display",
+            "Swift GPS compatible"
+          ]
+        },
+        {
+          "model": "Tern",
+          "year": 2024,
+          "description": "Ultra-compact for scuba and freedivers",
+          "sizes": ["One Size"],
+          "productUrl": "https://shearwater.com/collections/dive-computers",
+          "imageUrl": "https://shearwater.com/images/tern.jpg",
+          "features": [
+            "Ultra-compact design",
+            "Freediving mode",
+            "Scuba mode",
+            "Watch-style form factor"
+          ]
+        },
+        {
+          "model": "Tern TX",
+          "year": 2024,
+          "description": "Ultra-compact with air integration and navigation",
+          "sizes": ["One Size"],
+          "productUrl": "https://shearwater.com/collections/dive-computers",
+          "imageUrl": "https://shearwater.com/images/tern-tx.jpg",
+          "features": [
+            "Ultra-compact design",
+            "Air integration",
+            "Digital compass",
+            "Watch-style form factor"
+          ]
+        },
+        {
+          "model": "Teric",
+          "year": 2023,
+          "description": "Ruggedized, compact for extreme environments with premium display",
+          "sizes": ["One Size"],
+          "productUrl": "https://shearwater.com/collections/dive-computers",
+          "imageUrl": "https://shearwater.com/images/teric.jpg",
+          "features": [
+            "AMOLED display",
+            "Technical diving capable",
+            "Air integration",
+            "Compact dive watch form"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Mares",
+      "category": "Regulator",
+      "products": [
+        {
+          "model": "Dual ADJ 62X",
+          "year": 2025,
+          "description": "Lightest and most compact regulator on market at 780g",
+          "sizes": ["One Size"],
+          "productUrl": "https://www.mares.com/en/shop-scuba-diving/diving-regulators",
+          "imageUrl": "https://www.mares.com/images/dual-adj-62x.jpg",
+          "features": [
+            "Balanced diaphragm first stage",
+            "Auto Sealing (AST) technology",
+            "Cold water capable",
+            "63mm first stage",
+            "464g DIN weight"
+          ]
+        },
+        {
+          "model": "Ultra 62X + Ultra II",
+          "year": 2025,
+          "description": "Ultra-compact, auto-sealing, travel-ready with Twin Power System",
+          "sizes": ["One Size"],
+          "productUrl": "https://www.mares.com/en/shop-scuba-diving/diving-regulators",
+          "imageUrl": "https://www.mares.com/images/ultra-62x.jpg",
+          "features": [
+            "Twin Power System",
+            "Soft purge",
+            "Breathing resistance adjustment",
+            "Under 1kg total weight"
+          ]
+        },
+        {
+          "model": "SXS 62X",
+          "year": 2025,
+          "description": "One of smallest regulators with balanced diaphragm at 535g",
+          "sizes": ["One Size"],
+          "productUrl": "https://www.mares.com/en/shop-scuba-diving/diving-regulators",
+          "imageUrl": "https://www.mares.com/images/sxs-62x.jpg",
+          "features": [
+            "Auto Sealing Technology (AST)",
+            "Natural Dynamic Flow Control",
+            "535g DIN weight",
+            "Constant air delivery"
+          ]
+        },
+        {
+          "model": "Planet 88X TBP",
+          "year": 2025,
+          "description": "Innovative pneumatic regulator with purely pneumatic valve (no springs)",
+          "sizes": ["One Size"],
+          "productUrl": "https://www.mares.com/en/shop-scuba-diving/diving-regulators",
+          "imageUrl": "https://www.mares.com/images/planet-88x.jpg",
+          "features": [
+            "Pneumatic valve (no springs)",
+            "88X TBP first stage",
+            "TBP Dry Kit",
+            "Icy depths capable",
+            "Silty environment ready"
+          ]
+        },
+        {
+          "model": "Rover 2S",
+          "year": 2024,
+          "description": "Budget-friendly option with solid performance and easy servicing",
+          "sizes": ["One Size"],
+          "productUrl": "https://www.mares.com/en/shop-scuba-diving/diving-regulators",
+          "imageUrl": "https://www.mares.com/images/rover-2s.jpg",
+          "features": [
+            "Easy servicing",
+            "Budget-friendly",
+            "Solid performance",
+            "Recreational diving"
+          ]
+        },
+        {
+          "model": "28XR",
+          "year": 2024,
+          "description": "Balanced diaphragm for tech, recreational and sidemount configurations",
+          "sizes": ["One Size"],
+          "productUrl": "https://www.mares.com/en/shop-scuba-diving/diving-regulators",
+          "imageUrl": "https://www.mares.com/images/28xr.jpg",
+          "features": [
+            "Balanced diaphragm",
+            "Technical diving",
+            "Stage tank compatible",
+            "Sidemount ready"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Aqualung",
+      "category": "Wetsuit",
+      "products": [
+        {
+          "model": "XSCAPE",
+          "year": 2025,
+          "description": "Stylish surf-style front-zip made from sustainable Yulex material",
+          "sizes": ["XS", "S", "M", "L", "XL", "2XL"],
+          "thickness": "4/3mm",
+          "productUrl": "https://us.aqualung.com/collections/diving-wetsuits",
+          "imageUrl": "https://us.aqualung.com/images/xscape.jpg",
+          "features": [
+            "Yulex sustainable material",
+            "Super-stretch neoprene",
+            "Surf-style front-zip",
+            "Men's and women's versions"
+          ],
+          "price": "$560.00"
+        },
+        {
+          "model": "HydroFlex",
+          "year": 2024,
+          "description": "Super-stretchy with 250% more stretch than conventional neoprene",
+          "sizes": ["XS", "S", "M", "L", "XL", "2XL"],
+          "thickness": "3mm",
+          "productUrl": "https://us.aqualung.com/collections/diving-wetsuits",
+          "imageUrl": "https://us.aqualung.com/images/hydroflex.jpg",
+          "features": [
+            "250% more stretch",
+            "AquaFlex neoprene",
+            "Ergonomic design",
+            "Men's and women's versions"
+          ],
+          "price": "$215.00"
+        },
+        {
+          "model": "DynaFlex",
+          "year": 2024,
+          "description": "Features Supratex reinforcements for increased knee flexibility",
+          "sizes": ["XS", "S", "M", "L", "XL", "2XL"],
+          "thickness": "5mm",
+          "productUrl": "https://us.aqualung.com/collections/diving-wetsuits",
+          "imageUrl": "https://us.aqualung.com/images/dynaflex.jpg",
+          "features": [
+            "Supratex reinforcements",
+            "Ergonomic sections",
+            "Flexible knees",
+            "Under-arm flexibility"
+          ]
+        },
+        {
+          "model": "Iceland",
+          "year": 2024,
+          "description": "7mm semi-dry with super stretch neoprene for cold water diving",
+          "sizes": ["S", "M", "L", "XL", "2XL"],
+          "thickness": "7mm",
+          "productUrl": "https://us.aqualung.com/collections/diving-wetsuits",
+          "imageUrl": "https://us.aqualung.com/images/iceland.jpg",
+          "features": [
+            "7mm super stretch neoprene",
+            "Semi-dry design",
+            "Abrasion-resistant outer",
+            "Pre-bent anatomic arms and legs",
+            "Cold water rated"
+          ]
+        },
+        {
+          "model": "SolaFlex",
+          "year": 2024,
+          "description": "Semi-waterproof suit with AquaFlex neoprene",
+          "sizes": ["XS", "S", "M", "L", "XL", "2XL"],
+          "thickness": "5mm",
+          "productUrl": "https://us.aqualung.com/collections/diving-wetsuits",
+          "imageUrl": "https://us.aqualung.com/images/solaflex.jpg",
+          "features": [
+            "AquaFlex neoprene",
+            "Semi-waterproof",
+            "3x stretch of standard neoprene",
+            "Premium construction"
+          ]
+        },
+        {
+          "model": "Freeflex Pro",
+          "year": 2024,
+          "description": "Designed specifically for freediving with maximum flexibility",
+          "sizes": ["XS", "S", "M", "L", "XL"],
+          "thickness": "3mm",
+          "productUrl": "https://us.aqualung.com/collections/freediving-wetsuits",
+          "imageUrl": "https://us.aqualung.com/images/freeflex-pro.jpg",
+          "features": [
+            "Freediving-specific design",
+            "Maximum flexibility",
+            "Streamlined cut",
+            "Ultra-stretch material"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2026-02-08",
+    "dataSource": "Official manufacturer websites and diving equipment reviews",
+    "notes": "Image URLs are placeholders - replace with actual product image URLs from manufacturer sites",
+    "categories": ["BCD", "Dive Computer", "Regulator", "Wetsuit"]
+  }
+}
