@@ -3,164 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scuba Dive Planner</title>
+    <title>Half-Life 3 Release Date</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🤿 Scuba Dive Planner</h1>
-            <p class="subtitle">Plan your recreational and technical dives safely</p>
+            <h1>🎮 Half-Life 3</h1>
+            <p class="subtitle">The question that has haunted gamers for decades</p>
         </header>
 
         <div class="tab-container">
-            <button class="tab-button active" onclick="switchTab('recreational')">Recreational</button>
-            <button class="tab-button" onclick="switchTab('technical')">Technical (GUE)</button>
+            <button class="tab-button active" onclick="switchTab('recreational')">When?</button>
+            <button class="tab-button" onclick="switchTab('technical')">Seriously, when?</button>
         </div>
 
         <div id="recreational-tab" class="tab-content active">
             <div class="warning-banner">
-                <strong>⚠️ Warning:</strong> This tool is for educational purposes only. Always use official dive tables and consult with certified dive professionals.
+                <strong>⚠️ Warning:</strong> This question may cause existential dread. Proceed with caution.
             </div>
 
             <div class="card">
-            <h2>Single Dive Calculator</h2>
-            <div class="input-group">
-                <label for="depth">Planned Depth (meters):</label>
-                <input type="number" id="depth" min="0" max="40" value="18" step="1">
-                <span class="unit">m</span>
+                <h2>Release Date Predictor</h2>
+                <div class="input-group">
+                    <label for="depth">Current Year:</label>
+                    <input type="number" id="depth" min="2000" max="2100" value="2026" step="1">
+                    <span class="unit">AD</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="time">Years of Waiting:</label>
+                    <input type="number" id="time" min="0" max="200" value="19" step="1">
+                    <span class="unit">years</span>
+                </div>
+
+                <button onclick="calculateDive()" class="btn-primary">Predict Release</button>
+
+                <div id="results" class="results hidden">
+                    <h3>Analysis</h3>
+                    <div id="ndl-info"></div>
+                    <div id="pressure-group"></div>
+                    <div id="safety-warnings"></div>
+                    <div id="recommendations"></div>
+                </div>
             </div>
 
-            <div class="input-group">
-                <label for="time">Planned Bottom Time (minutes):</label>
-                <input type="number" id="time" min="0" max="200" value="30" step="5">
-                <span class="unit">min</span>
+            <div class="card">
+                <h2>Hopium Level Calculator</h2>
+                <div class="input-group">
+                    <label for="pressure-group-input">Current Hopium Level:</label>
+                    <select id="pressure-group-input">
+                        <option value="A">None (A)</option>
+                        <option value="B">Minimal (B)</option>
+                        <option value="C">Moderate (C)</option>
+                        <option value="D">High (D)</option>
+                        <option value="E">Dangerous (E)</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="surface-interval">Days Since Last Rumor:</label>
+                    <input type="number" id="surface-interval" min="0" max="3650" value="180" step="1">
+                    <span class="unit">days</span>
+                </div>
+
+                <button onclick="calculateSurfaceInterval()" class="btn-secondary">Calculate Sanity</button>
+
+                <div id="surface-results" class="results hidden">
+                    <h3>Sanity Results</h3>
+                    <div id="new-pressure-group"></div>
+                    <div id="surface-recommendations"></div>
+                </div>
             </div>
-
-            <button onclick="calculateDive()" class="btn-primary">Calculate Dive</button>
-
-            <div id="results" class="results hidden">
-                <h3>Dive Analysis</h3>
-                <div id="ndl-info"></div>
-                <div id="pressure-group"></div>
-                <div id="safety-warnings"></div>
-                <div id="recommendations"></div>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2>Surface Interval Calculator</h2>
-            <div class="input-group">
-                <label for="pressure-group-input">Pressure Group After First Dive:</label>
-                <select id="pressure-group-input">
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                    <option value="E">E</option>
-                    <option value="F">F</option>
-                    <option value="G">G</option>
-                    <option value="H">H</option>
-                    <option value="I">I</option>
-                    <option value="J">J</option>
-                    <option value="K">K</option>
-                    <option value="L">L</option>
-                </select>
-            </div>
-
-            <div class="input-group">
-                <label for="surface-interval">Surface Interval (minutes):</label>
-                <input type="number" id="surface-interval" min="0" max="720" value="60" step="15">
-                <span class="unit">min</span>
-            </div>
-
-            <button onclick="calculateSurfaceInterval()" class="btn-secondary">Calculate New Pressure Group</button>
-
-            <div id="surface-results" class="results hidden">
-                <h3>Surface Interval Results</h3>
-                <div id="new-pressure-group"></div>
-                <div id="surface-recommendations"></div>
-            </div>
-        </div>
 
             <div class="card info-card">
-                <h2>Recreational Dive Limits</h2>
+                <h2>Known Facts</h2>
                 <ul>
-                    <li><strong>Maximum Depth:</strong> 40 meters for recreational diving</li>
-                    <li><strong>Recommended Beginner Depth:</strong> 18 meters</li>
-                    <li><strong>Ascent Rate:</strong> No faster than 9 meters/minute</li>
-                    <li><strong>Safety Stop:</strong> 3-5 minutes at 5 meters</li>
-                    <li><strong>Minimum Surface Interval:</strong> Plan appropriate surface intervals between dives</li>
+                    <li><strong>Last Release:</strong> Half-Life 2: Episode Two (2007)</li>
+                    <li><strong>Total Wait Time:</strong> Over 19 years and counting</li>
+                    <li><strong>Confirmed:</strong> Valve is not good at counting to 3</li>
+                    <li><strong>Rumors:</strong> Approximately 47,000 and counting</li>
+                    <li><strong>Gabe Newell:</strong> Still not talking about it</li>
                 </ul>
             </div>
         </div>
 
         <div id="technical-tab" class="tab-content">
             <div class="warning-banner">
-                <strong>⚠️ Technical Diving Warning:</strong> Technical diving requires specialized training and certification. This tool implements GUE standards for educational purposes only.
+                <strong>⚠️ Technical Diving Warning:</strong> Diving into HL3 rumors is extremely dangerous to your mental health.
             </div>
 
             <div class="card">
-                <h2>DecoPlanner - GUE Technical Dive Calculator</h2>
+                <h2>Deep Lore Analysis</h2>
 
                 <div class="input-group">
-                    <label for="tech-depth">Maximum Depth (meters):</label>
+                    <label for="tech-depth">Conspiracy Depth (meters):</label>
                     <input type="number" id="tech-depth" min="0" max="100" value="45" step="3">
                     <span class="unit">m</span>
                 </div>
 
                 <div class="input-group">
-                    <label for="tech-bottom-time">Bottom Time (minutes):</label>
+                    <label for="tech-bottom-time">Time Spent on Forums (minutes):</label>
                     <input type="number" id="tech-bottom-time" min="0" max="120" value="20" step="5">
                     <span class="unit">min</span>
                 </div>
 
                 <div class="input-group">
-                    <label for="bottom-gas">Bottom Gas:</label>
+                    <label for="bottom-gas">Copium Blend:</label>
                     <select id="bottom-gas">
-                        <option value="air">Air (21/00)</option>
-                        <option value="ean32">EAN32 (32/00)</option>
-                        <option value="ean36">EAN36 (36/00)</option>
-                        <option value="21/35" selected>Trimix 21/35</option>
-                        <option value="18/45">Trimix 18/45</option>
-                        <option value="15/55">Trimix 15/55</option>
-                        <option value="12/65">Trimix 12/65</option>
-                        <option value="10/70">Trimix 10/70</option>
+                        <option value="air">Standard Copium</option>
+                        <option value="ean32">Premium Copium 32%</option>
+                        <option value="ean36">Ultra Copium 36%</option>
+                        <option value="21/35" selected>Trimix 21/35 (Danger Zone)</option>
+                        <option value="18/45">Trimix 18/45 (ICU Level)</option>
                     </select>
                 </div>
 
                 <div class="input-group">
-                    <label for="deco-gas">Deco Gas:</label>
+                    <label for="deco-gas">Decompression Copium:</label>
                     <select id="deco-gas">
-                        <option value="none">None (Bottom Gas Only)</option>
-                        <option value="ean50" selected>EAN50 (50/00)</option>
-                        <option value="oxygen">Oxygen (100/00)</option>
-                        <option value="both">EAN50 + Oxygen</option>
+                        <option value="none">None (Acceptance)</option>
+                        <option value="ean50" selected>EAN50 (Denial)</option>
+                        <option value="oxygen">Pure Copium (Bargaining)</option>
+                        <option value="both">EAN50 + Pure (Full Delusion)</option>
                     </select>
                 </div>
 
                 <div class="input-group">
-                    <label for="gf-low">Gradient Factor Low (%):</label>
+                    <label for="gf-low">Faith Level (%):</label>
                     <input type="number" id="gf-low" min="10" max="100" value="30" step="5">
                     <span class="unit">%</span>
                 </div>
 
                 <div class="input-group">
-                    <label for="gf-high">Gradient Factor High (%):</label>
+                    <label for="gf-high">Delusion Level (%):</label>
                     <input type="number" id="gf-high" min="10" max="100" value="70" step="5">
                     <span class="unit">%</span>
                 </div>
 
                 <div class="input-group">
-                    <label for="ascent-rate">Ascent Rate (meters/min):</label>
+                    <label for="ascent-rate">Rumor Spread Rate (rumors/day):</label>
                     <input type="number" id="ascent-rate" min="3" max="18" value="9" step="3">
-                    <span class="unit">m/min</span>
+                    <span class="unit">rumors/day</span>
                 </div>
 
-                <button onclick="calculateTechnicalDive()" class="btn-primary">Calculate Deco Schedule</button>
+                <button onclick="calculateTechnicalDive()" class="btn-primary">Analyze Copium</button>
 
                 <div id="tech-results" class="results hidden">
-                    <h3>Decompression Schedule</h3>
+                    <h3>Lore Analysis</h3>
                     <div id="tech-profile"></div>
                     <div id="runtime-table"></div>
                     <div id="gas-requirements"></div>
@@ -169,21 +159,24 @@
             </div>
 
             <div class="card info-card">
-                <h2>GUE Technical Diving Standards</h2>
+                <h2>Half-Life 3 Lore:</h2>
                 <ul>
-                    <li><strong>Standard Gases:</strong> GUE uses standardized gas mixes for specific depth ranges</li>
-                    <li><strong>Gradient Factors:</strong> Conservative 30/70 or 30/85 depending on conditions</li>
-                    <li><strong>Ascent Rate:</strong> 9 meters/minute (standard GUE rate)</li>
-                    <li><strong>Deep Stops:</strong> Integrated through gradient factor methodology</li>
-                    <li><strong>Min Deco:</strong> Minimum decompression time approach</li>
-                    <li><strong>Team Diving:</strong> All technical dives require proper team configuration</li>
-                    <li><strong>Gas Planning:</strong> Rule of thirds for backmount, rule of sixths for sidemount</li>
+                    <li><strong>гордон:</strong> ням-ням, щовель</li>
+                    <li><strong>g man:</strong> ОТДАЙ МНЕ ЩОВЕЛЬ</li>
+                    <li><strong>гордон:</strong> ЧТООО жы мен</li>
+                    <li><strong>гордон:</strong> хаха я уеду от тебя на туалете</li>
+                    <li><strong>g man:</strong> ах так</li>
+                    <li><strong>g man:</strong> я тебя догоню гордон</li>
+                    <li><strong>гордон:</strong> я спрятался в своем мешочке надеюсь джы мен меня не найдет</li>
+                    li><strong>g man:</strong> ха ха я тебя нашел</li>
+                    <li><strong>гордон:</strong> о нееет</li>
+                    <li><strong>g man:</strong> хаха, ммм, какой же вкусный щовель</li>
                 </ul>
             </div>
         </div>
 
         <footer>
-            <p>Always dive with a buddy and within your certification limits.</p>
+            <p>Time, Dr. Freeman? Is it really that time again?</p>
         </footer>
     </div>
 
